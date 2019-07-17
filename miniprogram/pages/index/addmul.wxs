@@ -1,0 +1,8 @@
+var filters = {
+  toFix: function (value) {
+    return value.toFixed(3)//此处3为保留三位小数
+  }
+}
+module.exports = {
+  toFix: filters.toFix
+}

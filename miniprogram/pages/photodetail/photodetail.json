@@ -1,0 +1,6 @@
+{
+ 
+  "usingComponents": {
+    "poster": "../../miniprogram_dist/poster/index"
+  }
+}

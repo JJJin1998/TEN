@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/chooseLib/chooseLib",
+    "pages/details/details",
+    "pages/photodetail/photodetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F3731E",
+    "navigationBarTitleText": "疯狂动物城",
+    "navigationBarTextStyle": "white"
+    
+  },
+  "sitemapLocation": "sitemap.json"
+}

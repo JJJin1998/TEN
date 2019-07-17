@@ -1,0 +1,48 @@
+<!--pages/chooseLib/chooseLib.wxml-->
+<view class="main">
+  <view class="container">
+    <view class="photoVideoBox">
+      <view wx:for="{{photoVideoList}}" wx:key wx:for-item="item" wx:for-index="index" class="item-box">
+        <view class="date-box" wx:if="{{item.time || index===0}}">
+          <view class="date">
+          </view>
+          <view class="age" wx:if="{{true}}">
+            <view class="age-text">{{item.animals.name}}</view>
+          </view>
+        </view> 
+        <view class="photo-item" >
+          <view class="photo-wrapper" >
+            <image 
+              id="myimage" 
+              data-id="{{item._id}}"
+              data-index="{{index}}" 
+              data-name="{{item.animals.name}}"
+              data-pic="{{item.animals.pic}}"
+              data-des="{{item.animals.des}}"
+              mode="aspectFill"  
+              src="{{item.animals.pic}}" 
+              bindlongtap="selectBox"
+              bindtap="toPhotoDetail"
+              style="width: 580rpx;height: 360rpx;">
+            </image>
+            <view class="photo-num" wx:if="{{item.animals.pic.length!==1}}">
+              <view class="img-icon">{{item.time}}</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="content" wx:if="{{contentValue}}">
+          <view class="text-icon" wx:if="{{false}}"></view>
+          <view class="content-text" >{{item.content}}</view>
+        </view>
+        <view class="pubtime">{{item.content}}</view>
+      </view>
+      <view class="bottom-loading" wx:if="{{boLoadingValue}}">
+        加载中...
+      </view>  
+    </view>
+  </view>
+  
+</view>
+
+

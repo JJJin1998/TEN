@@ -1,0 +1,36 @@
+.page{
+  background: #000;
+}
+.swiper-item {
+  width: 100%;
+}
+.swiper-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  width: 100%; 
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+  line-height: 50rpx;
+  bottom: 0;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.contenti{
+  width: 100%; 
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+  line-height: 50rpx;
+  top: 200rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.text{
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20rpx;
+  font-family: "Microsoft YaHei";
+}

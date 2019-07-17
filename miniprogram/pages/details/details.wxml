@@ -1,0 +1,48 @@
+<wxs module="filters" src="addmul.wxs"></wxs>
+
+<view class="container" bindtap='uploads'>
+
+<cover-view >
+<button class='back-btn' bindtap='onloadinfor'>
+  <view class='back-btn text'> 
+    <text> 保存</text>
+  </view>
+</button>
+</cover-view>
+
+
+  
+    <block wx:for="{{list}}" wx:key="key" wx:for-index="index">
+      <view class="film-item" bindtap="viewDetail" data-id="{{item.name}}" data-title="{{item.name}}">
+        <view class="film-image">
+          <image mode='widthFix' src="{{item.baike_info.image_url}}"></image>
+        </view>
+        <view class="film-info">
+          <view>
+            <text class="film-title">{{item.name}}</text>
+          </view>
+          <view class="film-rating">
+            <block >
+              <text class="label">置信度</text>
+              <text class="rating">{{filters.toFix(item.score *100)}}%</text>
+            </block>
+            
+          </view>
+          <scroll-view style="height: 100px;" scroll-y="true"  bindscroll="scroll">
+          <view class="directors">
+            <text class="label">详情</text>
+            <block >
+              <text class="person">{{item.baike_info.description}}</text>
+            </block>
+          </view>
+          </scroll-view>
+          
+        </view> 
+    </view>
+    
+    </block>
+
+   
+      
+
+ </view>

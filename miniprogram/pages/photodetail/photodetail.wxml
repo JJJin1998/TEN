@@ -1,0 +1,30 @@
+<view class="page">
+    <view>
+    <view class="swiper">
+    
+      <swiper 
+        indicator-dots="{{indicatorDots}}" 
+        vertical="{{vertical}}"
+        autoplay="{{autoplay}}" 
+        interval="{{interval}}" 
+        duration="{{duration}}"
+        style="height: {{swiperHeight}}px">
+          <view class="contenti" >
+          <poster id="poster" config="{{posterConfig}}" bind:success="onPosterSuccess" bind:fail="onPosterFail">
+             <button>点击生成海报</button>
+          </poster>
+          </view>
+          <swiper-item class="swiper-box">
+            <image src="{{imgUrls}}" class="swiper-item" mode="widthFix" bindtap="back"></image>
+          </swiper-item>
+          <view class="content" >
+          <scroll-view style="height: 120px;" scroll-y="true"  bindscroll="scroll">
+            <text class="text">"{{description}}"</text>
+          </scroll-view>
+          </view>
+       
+      </swiper>
+      </view>
+   
+  </view>
+</view>
