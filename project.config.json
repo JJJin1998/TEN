@@ -10,7 +10,7 @@
 		"autoAudits": false,
 		"checkInvalidKey": true
 	},
-	"appid": "wxd47d55c2fbff49fa",
+	"appid": "wx*****",//填写自己的appid
 	"projectname": "0712",
 	"libVersion": "2.2.5",
 	"simulatorType": "wechat",
