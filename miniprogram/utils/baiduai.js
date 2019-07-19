@@ -1,11 +1,4 @@
-/**
- * 调用百度EasyDL、OCR示例代码
- * 只提供了一个EasyDL、OCR接口的封装。可以根据自己的需求封装即可
- */
-let accessToken = '24.9b28ac82d0642cf249c827a1d6deb9c9.2592000.1565004591.282335-16707999'//动物识别
-//let accessToken = '24.641e8c531aed41a0b7a4a0cf26b8060f.2592000.1564899849.282335-16699941'//自己的accessToken 根据实际情况可以进行封装 自动获取token,文字识别
-//let easydlUrl = 'https://aip.baidubce.com/rpc/2.0/ai_custom/v1/classification/XXX';//替换自己训练且已经发布的接口地址
-//let ocrGenerallUrl = 'https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic';//OCR通用识别接口
+let accessToken = '******'//自己获取的动物识别accessToken
 let animalUrl = 'https://aip.baidubce.com/rest/2.0/image-classify/v1/animal';//动物识别接口
 //动物识别接口 
 let animalRequestByImage = (base64Img, callback) => {
